@@ -1,0 +1,37 @@
+{
+  "name": "@eo-locale/polyfills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && rollup --config ./rollup.config.js",
+    "preversion": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eo-locale/polyfills.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Maksim Sharipov",
+    "url": "https://github.com/pret-a-porter"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eo-locale/polyfills/issues"
+  },
+  "homepage": "https://github.com/eo-locale/polyfills#readme",
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "@types/webpack-env": "^1.13.9",
+    "rollup": "^1.11.3",
+    "rollup-plugin-typescript2": "^0.21.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "intl": "^1.2.5",
+    "intl-locales-supported": "^1.0.0",
+    "intl-pluralrules": "^1.0.1"
+  }
+}
