@@ -1,4 +1,4 @@
-const areIntlLocalesSupported = require('intl-locales-supported');
+const areIntlLocalesSupported = require('intl-locales-supported').default;
 
 export function clientPolyfill() {
   return new Promise(resolve => {
